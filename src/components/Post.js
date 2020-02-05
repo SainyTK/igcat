@@ -17,12 +17,12 @@ const Post = props => {
                 <Icon type='dots' />
             </div>
             <div className='post-media'>
-                <img src={media} style={{ width: '100%' }} />
+                <img src={media} style={{ width: '100%', cursor: 'pointer' }} onClick={props.handleLike} />
             </div>
             <div className='post-content'>
                 <div className='post-action-container'>
                     <div className='post-action-left'>
-                        <Icon style={{ marginRight: 16 }} type='heart' />
+                        <Icon style={{ marginRight: 16, cursor: 'pointer' }} type='heart' onClick={props.handleLike} />
                         <Icon style={{ marginRight: 16 }} type='message' />
                         <Icon style={{ marginRight: 16 }} type='forward' />
                     </div>

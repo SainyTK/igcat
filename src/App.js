@@ -5,6 +5,7 @@ import Post from './components/Post';
 
 import './App.css';
 import PostForm from './components/PostForm';
+import Weather from './components/Weather';
 
 const user = {
   name: 'Tanakorn Karode',
@@ -49,15 +50,20 @@ function App() {
     setPosts([data, ...posts]);
   }
 
+  const handleLike = (index) => {
+    setPosts(posts.map((post, i) => index !== i ? post : { ...post, like: post.like + 1 }))
+  }
+
   return (
     <div className="App">
       <Topbar />
       <div className='app-container'>
+        <Weather />
         <PostForm user={user} onAddPost={handleAddPost} />
         {
           posts.map((post, index) => (
             <div key={index} style={{ marginBottom: 60 }}>
-              <Post post={post} />
+              <Post post={post} handleLike={() => { handleLike(index) }} />
             </div>
           ))
         }
