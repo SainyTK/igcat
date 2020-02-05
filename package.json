@@ -1,5 +1,6 @@
 {
   "name": "react-instagram",
+  "homepage" : "http://tanakorn0314.github.io/igcat",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
