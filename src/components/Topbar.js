@@ -3,7 +3,7 @@ import Icon from './Icon';
 
 import './Topbar.css';
 import logo from '../images/ig-logo.png';
-import Input from './Input';
+import Search from './Search';
 
 const Topbar = props => {
     return (
@@ -14,7 +14,7 @@ const Topbar = props => {
                 <img className='topbar-logo' src={logo} />
             </div>
             <div className='topbar-center'>
-                <Input/>
+                <Search/>
             </div>
             <div className='topbar-right'>
                 <Icon style={{ marginLeft: 20 }} type='compass' />

@@ -1,0 +1,49 @@
+.post-form-container {
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid var(--border);
+    padding: 8px;
+
+    box-sizing: border-box;
+
+    width: 600px;
+
+    margin-bottom: 20px;
+}
+
+.post-form-textarea-container {
+    display: flex;
+}
+
+.post-form-action {
+    width: 100%;
+}
+
+.post-form-textarea {
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+
+    background-color: var(--bg);
+    border: 1px solid var(--border);
+
+    box-sizing: border-box;
+
+    padding: 8px;
+    margin-bottom: 4px;
+}
+
+.post-form-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    margin-right: 8px;
+    border-bottom: .5px solid var(--border2);
+    position: relative;
+}
+
+.post-form-bottom-action {
+    display: flex;
+    justify-content: flex-end;
+}
