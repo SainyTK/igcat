@@ -1,0 +1,23 @@
+.topbar-container {
+    padding: 26px 20px;
+    display: flex;
+    background-color: #fff;
+
+    justify-content: space-between;
+
+    border-bottom: 1px solid var(--border);
+
+    position: relative;
+}
+
+.topbar-left, .topbar-center, .topbar-right {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.topbar-logo {
+    width: 100px;
+    padding-top: 4px;
+    margin-left: 12px;
+}
